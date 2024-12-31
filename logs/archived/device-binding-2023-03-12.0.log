@@ -1,0 +1,269 @@
+2023-03-12 09:50:23,028 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on R50000273B with PID 21240 (D:\RedDot Projects\utility-service\target\classes started by fahim.akber in D:\RedDot Projects\utility-service)
+2023-03-12 09:50:23,034 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "dev"
+2023-03-12 09:50:23,092 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-12 09:50:23,092 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-12 09:50:23,901 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 09:50:23,902 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 09:50:23,985 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 76 ms. Found 2 JPA repository interfaces.
+2023-03-12 09:50:23,997 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 09:50:23,998 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-12 09:50:24,024 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 09:50:24,025 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 09:50:24,026 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-03-12 09:50:25,780 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-12 09:50:25,791 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-12 09:50:25,791 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-12 09:50:25,792 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 09:50:25,898 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-12 09:50:25,898 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 2805 ms
+2023-03-12 09:50:26,096 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 09:50:26,143 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 09:50:26,265 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 09:50:26,348 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-12 09:50:26,349 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-12 09:50:26,653 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-12 09:50:26,664 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-12 09:50:27,192 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 09:50:27,202 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 09:50:28,083 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 09:50:28,353 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-12 09:50:28,364 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-12 09:50:28,372 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 09:50:28,384 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 5.865 seconds (JVM running for 7.792)
+2023-03-12 10:07:03,352 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 10:07:03,357 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-12 10:07:03,366 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-12 10:07:07,191 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on R50000273B with PID 11556 (D:\RedDot Projects\utility-service\target\classes started by fahim.akber in D:\RedDot Projects\utility-service)
+2023-03-12 10:07:07,193 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "dev"
+2023-03-12 10:07:07,231 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-12 10:07:07,231 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-12 10:07:07,769 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 10:07:07,770 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 10:07:07,829 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 54 ms. Found 2 JPA repository interfaces.
+2023-03-12 10:07:07,837 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 10:07:07,838 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-12 10:07:07,854 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 10:07:07,855 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 10:07:07,855 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-03-12 10:07:08,293 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-12 10:07:08,298 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-12 10:07:08,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-12 10:07:08,299 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 10:07:08,369 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-12 10:07:08,369 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1137 ms
+2023-03-12 10:07:08,470 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 10:07:08,499 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 10:07:08,605 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 10:07:08,660 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-12 10:07:08,661 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-12 10:07:08,850 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-12 10:07:08,858 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-12 10:07:09,258 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 10:07:09,264 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 10:07:09,982 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 10:07:10,221 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-12 10:07:10,232 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-12 10:07:10,252 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 10:07:10,262 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 3.537 seconds (JVM running for 4.413)
+2023-03-12 10:20:07,498 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 10:20:07,499 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Initializing Servlet 'dispatcherServlet'
+2023-03-12 10:20:07,501 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Completed initialization in 1 ms
+2023-03-12 10:20:07,544 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] ea5cc27b-f44f-4ffb-b594-a9dc72f76d59 Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'utilityCode' for method parameter type String is not present]
+2023-03-12 10:20:07,546 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] ea5cc27b-f44f-4ffb-b594-a9dc72f76d59 null
+2023-03-12 10:20:39,517 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 49946689-78be-476a-8647-58c83d6a0123 Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'utilityCode' for method parameter type String is not present]
+2023-03-12 10:20:39,518 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 49946689-78be-476a-8647-58c83d6a0123 null
+2023-03-12 10:20:50,508 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] 39948645-f1d4-44f4-adc4-066ae2abb4c7 Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'utilityCode' for method parameter type String is not present]
+2023-03-12 10:20:50,509 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-7] 39948645-f1d4-44f4-adc4-066ae2abb4c7 null
+2023-03-12 10:24:26,085 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] cfb30144-a57d-49ae-86ee-b8644364f118 Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'language' for method parameter type String is not present]
+2023-03-12 10:24:26,086 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] cfb30144-a57d-49ae-86ee-b8644364f118 null
+2023-03-12 10:38:20,517 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m41s151ms881µs700ns).
+2023-03-12 10:41:59,965 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] 5fb17823-f015-4a5c-a753-1c424d214444 Resolved [org.springframework.web.bind.MissingRequestHeaderException: Required request header 'language' for method parameter type String is not present]
+2023-03-12 10:41:59,968 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-10] 5fb17823-f015-4a5c-a753-1c424d214444 null
+2023-03-12 10:42:46,532 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] 2228ace9-3498-4c77-bc4d-d0fdcfadab43 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:43:21,809 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 4ccf945d-4da8-4309-a709-686636891025 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:44:10,543 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] 874b561b-4f3c-4615-9daf-173db725b7c9 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:44:25,531 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 10:44:25,535 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-12 10:44:25,547 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-12 10:44:32,967 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on R50000273B with PID 28788 (D:\RedDot Projects\utility-service\target\classes started by fahim.akber in D:\RedDot Projects\utility-service)
+2023-03-12 10:44:32,972 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "dev"
+2023-03-12 10:44:33,070 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-12 10:44:33,071 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-12 10:44:34,394 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 10:44:34,395 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 10:44:34,503 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 100 ms. Found 2 JPA repository interfaces.
+2023-03-12 10:44:34,518 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 10:44:34,520 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-12 10:44:34,548 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 10:44:34,549 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 10:44:34,549 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 19 ms. Found 0 Redis repository interfaces.
+2023-03-12 10:44:35,375 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-12 10:44:35,388 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-12 10:44:35,389 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-12 10:44:35,389 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-12 10:44:35,534 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-12 10:44:35,535 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 2463 ms
+2023-03-12 10:44:35,776 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 10:44:35,848 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 10:44:36,077 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 10:44:36,205 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-12 10:44:36,207 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-12 10:44:36,646 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-12 10:44:36,664 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-12 10:44:37,625 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 10:44:37,637 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 10:44:39,125 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 10:44:39,692 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-12 10:44:39,718 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-12 10:44:39,735 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-12 10:44:39,758 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 7.76 seconds (JVM running for 10.272)
+2023-03-12 10:44:44,157 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-12 10:44:44,158 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Initializing Servlet 'dispatcherServlet'
+2023-03-12 10:44:44,159 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Completed initialization in 1 ms
+2023-03-12 10:45:32,901 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s147ms805µs600ns).
+2023-03-12 10:46:35,444 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] 3c243c1e-4df6-4667-af3a-e8901075b55c Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:46:42,947 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 323f91ff-c985-41b6-950c-e1b1f2c18cad Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:48:07,574 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] e3063605-4b8c-44b9-884f-841936429b27 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:48:10,027 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] 39cf1bd2-71bd-4fd3-9713-c693f71ed6f6 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:48:11,687 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] d2c9a055-5637-42d6-b2af-3fc979c08fe2 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:48:14,198 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] 61d960e7-8537-4ba8-b8a3-258611e5620c Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 10:49:10,133 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m31ms149µs800ns).
+2023-03-12 10:49:10,135 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 8db4ce00-4775-4755-a941-475a06ad3bcb Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 12:19:47,703 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s162ms53µs500ns).
+2023-03-12 13:18:27,898 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m40s119ms734µs900ns).
+2023-03-12 13:40:14,081 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-9] 85fab454-a58c-4629-87db-b6e3bef097cd null
+2023-03-12 13:53:48,789 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] 52db422e-15d5-4012-a7bc-5e301ee1dec6 null
+2023-03-12 13:53:54,658 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 263fdf4e-ab08-4750-a2ff-c9bf0e802a74 null
+2023-03-12 14:35:34,364 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m5s891ms484µs101ns).
+2023-03-12 15:11:10,675 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m5s959ms590µs800ns).
+2023-03-12 15:41:46,950 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m5s823ms765µs500ns).
+2023-03-12 15:41:47,866 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] b2d9d0a9-4cd8-41d0-8bed-e9c835c0ce34 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 15:45:01,056 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m44s101ms284µs499ns).
+2023-03-12 15:45:04,702 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-10] c886f6af-5551-4640-815b-d3e661cbbd7e Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 15:48:06,506 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m5s450ms603µs401ns).
+2023-03-12 15:48:07,176 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] 32b5e41b-6e05-42bf-af56-faf32dbb033a Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 15:48:13,753 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] 7013ed26-f770-46d4-b361-a4464357ee90 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 15:53:14,686 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m38s164ms849µs299ns).
+2023-03-12 16:03:02,736 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] 6ca12fb1-3ba9-4a15-a89f-4a9f52a2458d Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 16:05:13,755 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] 32fda28a-4742-40d3-b508-f7b5339b2b1c Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 16:51:33,142 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m47s730ms71µs800ns).
+2023-03-12 17:01:53,342 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] c22e2343-6d54-4c61-ae53-07982247a86e Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 17:05:15,239 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m11s921ms499µs801ns).
+2023-03-12 17:11:07,898 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] 17b49e13-46c0-4404-aa6e-9dd648e9b856 java.io.IOException: An established connection was aborted by the software in your host machine
+2023-03-12 17:11:35,964 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m20s724ms530µs800ns).
+2023-03-12 17:12:27,447 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=51s483ms559µs900ns).
+2023-03-12 17:25:05,536 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m38s76ms366µs100ns).
+2023-03-12 17:25:12,741 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] 14141ea4-8ef5-45df-9fa9-40d4157b6134 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-12 17:45:34,202 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=20m28s666ms436µs600ns).
+2023-03-12 18:03:33,987 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m59s783ms747µs799ns).
+2023-03-12 18:03:34,095 WARN reactor.util.Loggers$Slf4JLogger [reactor-http-nio-4]  [2eb8807b-1, L:0.0.0.0/0.0.0.0:60221] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+2023-03-12 18:03:34,096 WARN reactor.util.Loggers$Slf4JLogger [reactor-http-nio-5]  [c6c7e282-1, L:0.0.0.0/0.0.0.0:60222] The connection observed an error
+reactor.netty.http.client.PrematureCloseException: Connection prematurely closed BEFORE response
+2023-03-12 18:03:34,124 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1]  Unexpected error occurred in scheduled task
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.ssl_services.apiclient.SSLApiClient.callGet(SSLApiClient.java:74)
+	at com.reddot.utilityservice.ssl_services.gateway.SSLUtilityGateway.getUtilityServices(SSLUtilityGateway.java:46)
+	at com.reddot.utilityservice.ssl_services.service.UtilityService.getAllServices(UtilityService.java:88)
+	at jdk.internal.reflect.GeneratedMethodAccessor29.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:305)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-12 18:03:34,127 WARN org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [http-nio-8080-exec-5] 90adc525-f966-4baf-88cd-899c436a38c3 Failure in @ExceptionHandler com.reddot.utilityservice.custom_exceptions.RestRepositoryExceptionHandler#handleApplicationException(ApplicationException)
+org.apache.catalina.connector.ClientAbortException: java.io.IOException: An established connection was aborted by the software in your host machine
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:310)
+	at org.apache.catalina.connector.OutputBuffer.flush(OutputBuffer.java:273)
+	at org.apache.catalina.connector.CoyoteOutputStream.flush(CoyoteOutputStream.java:118)
+	at org.apache.commons.io.output.ProxyOutputStream.flush(ProxyOutputStream.java:106)
+	at org.apache.commons.io.output.TeeOutputStream.flush(TeeOutputStream.java:91)
+	at com.reddot.utilityservice.configuration.HttpLoggingFilter$TeeServletOutputStream.flush(HttpLoggingFilter.java:241)
+	at java.base/java.io.FilterOutputStream.flush(FilterOutputStream.java:153)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1187)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:1009)
+	at org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal(AbstractJackson2HttpMessageConverter.java:456)
+	at org.springframework.http.converter.AbstractGenericHttpMessageConverter.write(AbstractGenericHttpMessageConverter.java:104)
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver.doResolveHandlerMethodException(ExceptionHandlerExceptionResolver.java:428)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodExceptionResolver.doResolveException(AbstractHandlerMethodExceptionResolver.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver.resolveException(AbstractHandlerExceptionResolver.java:142)
+	at org.springframework.web.servlet.handler.HandlerExceptionResolverComposite.resolveException(HandlerExceptionResolverComposite.java:80)
+	at org.springframework.web.servlet.DispatcherServlet.processHandlerException(DispatcherServlet.java:1331)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1142)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1088)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+Caused by: java.io.IOException: An established connection was aborted by the software in your host machine
+	at java.base/sun.nio.ch.SocketDispatcher.write0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.write(SocketDispatcher.java:51)
+	at java.base/sun.nio.ch.IOUtil.writeFromNativeBuffer(IOUtil.java:113)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:79)
+	at java.base/sun.nio.ch.IOUtil.write(IOUtil.java:50)
+	at java.base/sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:466)
+	at org.apache.tomcat.util.net.NioChannel.write(NioChannel.java:136)
+	at org.apache.tomcat.util.net.NioEndpoint$NioSocketWrapper.doWrite(NioEndpoint.java:1424)
+	at org.apache.tomcat.util.net.SocketWrapperBase.doWrite(SocketWrapperBase.java:768)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flushBlocking(SocketWrapperBase.java:732)
+	at org.apache.tomcat.util.net.SocketWrapperBase.flush(SocketWrapperBase.java:716)
+	at org.apache.coyote.http11.Http11OutputBuffer$SocketOutputBuffer.flush(Http11OutputBuffer.java:573)
+	at org.apache.coyote.http11.filters.ChunkedOutputFilter.flush(ChunkedOutputFilter.java:157)
+	at org.apache.coyote.http11.Http11OutputBuffer.flush(Http11OutputBuffer.java:221)
+	at org.apache.coyote.http11.Http11Processor.flush(Http11Processor.java:1253)
+	at org.apache.coyote.AbstractProcessor.action(AbstractProcessor.java:402)
+	at org.apache.coyote.Response.action(Response.java:209)
+	at org.apache.catalina.connector.OutputBuffer.doFlush(OutputBuffer.java:306)
+	... 63 common frames omitted
+2023-03-12 18:03:34,130 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-5] 90adc525-f966-4baf-88cd-899c436a38c3 Request processing failed; nested exception is com.reddot.utilityservice.custom_exceptions.ApplicationException
+2023-03-12 18:03:37,045 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 18:03:37,056 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-12 18:03:37,074 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.

@@ -1,0 +1,78 @@
+2023-03-27 12:13:45,801 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on R50000273B with PID 30088 (D:\RedDot Projects\utility-service\target\classes started by fahim.akber in D:\RedDot Projects\utility-service)
+2023-03-27 12:13:45,805 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-27 12:13:45,807 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "dev"
+2023-03-27 12:13:45,849 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in C:\Users\fahim.akber\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.4.0.0\ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/C:/Users/fahim.akber/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-27 12:13:45,850 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-27 12:13:45,850 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-27 12:13:46,571 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-27 12:13:46,571 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-27 12:13:46,667 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 90 ms. Found 2 JPA repository interfaces.
+2023-03-27 12:13:46,681 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-27 12:13:46,682 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-27 12:13:46,707 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-27 12:13:46,708 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-27 12:13:46,708 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
+2023-03-27 12:13:47,263 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-27 12:13:47,273 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-27 12:13:47,274 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-27 12:13:47,276 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-27 12:13:47,372 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-27 12:13:47,373 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1523 ms
+2023-03-27 12:13:47,529 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-27 12:13:47,576 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-27 12:13:47,706 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-27 12:13:47,783 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-27 12:13:47,783 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-27 12:13:48,389 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-27 12:13:48,404 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-27 12:13:58,550 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-27 12:13:58,557 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 12:13:59,615 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-27 12:13:59,955 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-27 12:13:59,968 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-27 12:13:59,981 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-27 12:13:59,992 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 14.628 seconds (JVM running for 18.712)
+2023-03-27 12:14:44,054 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-27 12:14:44,057 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Initializing Servlet 'dispatcherServlet'
+2023-03-27 12:14:44,058 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Completed initialization in 1 ms
+2023-03-27 12:14:44,068 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] fd519602-6c5b-44c8-88bc-711cd22365bb REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331840840","dynamicFields":{"account_no":"0302109157","billno":"201000451348","month": "March"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-27 12:14:44,198 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] fd519602-6c5b-44c8-88bc-711cd22365bb Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-27 12:14:44,200 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] fd519602-6c5b-44c8-88bc-711cd22365bb  [RESPONSE:{"statusCode":"400","message":"Request processing failed. Please try again later"}] [REQUEST TIME:Mon Mar 27 12:14:44 BDT 2023] [ELAPSED TIME:136ms]
+2023-03-27 12:15:28,672 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] e04cf4d4-b3d6-4d84-8682-782a9f62f9ac REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331840840","dynamicFields":{"account_no":"0302109157","billno":"201000451348","month": "March"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-27 12:15:29,948 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] e04cf4d4-b3d6-4d84-8682-782a9f62f9ac  [RESPONSE:{"transaction_id":"MTcyMTE4MzMxODQwODQwMTY3OTg5NzcyODc5MQ==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Mon Mar 27 12:15:28 BDT 2023] [ELAPSED TIME:1276ms]
+2023-03-27 12:43:21,178 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m32s238ms274µs800ns).
+2023-03-27 12:44:35,358 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] ce473c47-5dfd-4b37-a280-a1febfd2992e REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"DESCO_PREPAID","walletNo":"018331840840","dynamicFields":{"account_no":"19000008","billno":"012212345678","amount":"11","mobile_no": "01967749626"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-27 12:44:46,493 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-8] ce473c47-5dfd-4b37-a280-a1febfd2992e Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-27 12:44:46,493 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] ce473c47-5dfd-4b37-a280-a1febfd2992e  [RESPONSE:{"statusCode":"400","message":"Request processing failed. Please try again later"}] [REQUEST TIME:Mon Mar 27 12:44:35 BDT 2023] [ELAPSED TIME:11135ms]
+2023-03-27 12:54:15,263 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m23s977ms210µs500ns).
+2023-03-27 13:48:01,032 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=16m45s195ms213µs900ns).
+2023-03-27 13:56:25,652 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s551ms771µs300ns).
+2023-03-27 15:10:17,035 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m20s291ms104µs700ns).
+2023-03-27 15:46:18,446 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m1s4ms381µs100ns).
+2023-03-27 15:46:33,645 INFO io.netty.util.internal.logging.AbstractInternalLogger [lettuce-nioEventLoop-4-3]  null Unexpected exception during request: java.io.IOException: An existing connection was forcibly closed by the remote host
+java.io.IOException: An existing connection was forcibly closed by the remote host
+	at java.base/sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:358)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+2023-03-27 15:46:33,787 INFO io.netty.util.internal.logging.AbstractInternalLogger [lettuce-eventExecutorLoop-1-7]  Reconnecting, last destination was localhost/127.0.0.1:6379
+2023-03-27 15:46:33,808 WARN io.netty.util.internal.logging.AbstractInternalLogger [lettuce-nioEventLoop-4-4]  Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2023-03-27 15:46:42,877 INFO io.netty.util.internal.logging.AbstractInternalLogger [lettuce-eventExecutorLoop-1-3]  Reconnecting, last destination was localhost:6379
+2023-03-27 15:46:42,885 WARN io.netty.util.internal.logging.AbstractInternalLogger [lettuce-nioEventLoop-4-8]  Cannot reconnect to [localhost:6379]: Connection refused: no further information: localhost/127.0.0.1:6379
+2023-03-27 15:46:44,699 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-27 15:46:44,718 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-27 15:46:44,724 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.

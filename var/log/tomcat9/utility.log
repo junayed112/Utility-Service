@@ -1,0 +1,290 @@
+2023-03-13 11:57:34,286 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 1683 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 11:57:34,288 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 11:57:34,341 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-13 11:57:34,342 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-13 11:57:35,237 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 11:57:35,237 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 11:57:35,329 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 83 ms. Found 2 JPA repository interfaces.
+2023-03-13 11:57:35,351 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 11:57:35,352 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 11:57:35,382 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 11:57:35,384 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 11:57:35,384 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2023-03-13 11:57:36,215 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-13 11:57:36,224 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-13 11:57:36,225 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-13 11:57:36,225 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-13 11:57:36,293 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-13 11:57:36,293 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1950 ms
+2023-03-13 11:57:36,526 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 11:57:36,596 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-13 11:57:36,756 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 11:57:36,844 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 11:57:36,845 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-13 11:57:37,450 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-13 11:57:37,472 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 11:57:38,759 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 11:57:38,772 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 11:57:40,685 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 11:57:41,191 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-13 11:57:41,215 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-13 11:57:41,229 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 11:57:41,252 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 7.509 seconds (JVM running for 13.63)
+2023-03-13 12:57:19,664 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=27m41s877ms).
+2023-03-13 14:24:07,350 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 4759 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:24:07,351 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 14:24:07,385 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-13 14:24:07,386 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-13 14:24:07,489 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.reddot.utilityservice.UtilityServiceApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'coreApiClient' for bean class [com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient] conflicts with existing, non-compatible bean definition of same name and class [com.reddot.utilityservice.core.apiclient.CoreApiClient]
+2023-03-13 14:24:07,521 ERROR org.springframework.boot.SpringApplication [restartedMain]  Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.reddot.utilityservice.UtilityServiceApplication]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'coreApiClient' for bean class [com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient] conflicts with existing, non-compatible bean definition of same name and class [com.reddot.utilityservice.core.apiclient.CoreApiClient]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:188)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:247)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:311)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:112)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:746)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:564)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.reddot.utilityservice.UtilityServiceApplication.main(UtilityServiceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'coreApiClient' for bean class [com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient] conflicts with existing, non-compatible bean definition of same name and class [com.reddot.utilityservice.core.apiclient.CoreApiClient]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:128)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:295)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:249)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:206)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:174)
+	... 18 common frames omitted
+2023-03-13 14:25:54,706 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 4779 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:25:54,707 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 14:25:54,737 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-13 14:25:54,737 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-13 14:25:55,295 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:25:55,295 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:25:55,354 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:25:55,369 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:25:55,370 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:25:55,389 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:25:55,389 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:25:55,389 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:25:55,865 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-13 14:25:55,871 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:25:55,872 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-13 14:25:55,872 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-13 14:25:55,926 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-13 14:25:55,926 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1188 ms
+2023-03-13 14:25:56,070 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:25:56,110 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-13 14:25:56,233 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 14:25:56,304 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:25:56,305 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-13 14:25:56,608 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-13 14:25:56,622 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:25:57,288 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:25:57,295 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:25:58,477 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:25:58,755 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-13 14:25:58,768 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:25:58,778 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 14:25:58,789 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 4.356 seconds (JVM running for 9.86)
+2023-03-13 14:26:06,106 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:26:06,109 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-13 14:26:06,115 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-13 14:26:47,739 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 4801 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:26:47,740 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 14:26:47,767 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-13 14:26:47,767 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-13 14:26:48,183 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:26:48,183 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:26:48,229 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:26:48,243 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:26:48,244 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:26:48,259 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:26:48,259 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:26:48,260 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:26:48,651 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-13 14:26:48,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:26:48,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-13 14:26:48,657 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-13 14:26:48,699 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-13 14:26:48,699 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 931 ms
+2023-03-13 14:26:48,806 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:26:48,831 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-13 14:26:48,909 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 14:26:48,963 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:26:48,963 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-13 14:26:49,176 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-13 14:26:49,184 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:26:49,834 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:26:49,840 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:26:50,592 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:26:50,825 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-13 14:26:50,837 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:26:50,846 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 14:26:50,856 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 3.382 seconds (JVM running for 8.979)
+2023-03-13 14:27:02,613 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 14:27:02,614 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-13 14:27:02,615 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-13 14:29:24,406 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher]  Restarting due to 87 class path changes (0 additions, 0 deletions, 87 modifications)
+2023-03-13 14:29:24,410 INFO org.apache.juli.logging.DirectJDKLog [Thread-5]  Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:29:24,411 INFO org.apache.juli.logging.DirectJDKLog [Thread-5]  Stopping service [Tomcat]
+2023-03-13 14:29:24,414 INFO org.apache.juli.logging.DirectJDKLog [Thread-5]  Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-13 14:29:24,418 WARN org.apache.juli.logging.DirectJDKLog [Thread-5]  The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.17/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.17/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.17/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.17/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@11.0.17/java.lang.Thread.run(Thread.java:829)
+2023-03-13 14:29:24,420 INFO org.apache.juli.logging.DirectJDKLog [Thread-5]  Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:29:24,423 INFO org.apache.juli.logging.DirectJDKLog [Thread-5]  Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:29:26,604 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-5]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:29:26,606 INFO com.zaxxer.hikari.HikariDataSource [Thread-5]  HikariPool-1 - Shutdown initiated...
+2023-03-13 14:29:26,615 INFO com.zaxxer.hikari.HikariDataSource [Thread-5]  HikariPool-1 - Shutdown completed.
+2023-03-13 14:29:30,134 INFO org.springframework.boot.StartupInfoLogger [main]  Starting UtilityserviceApplicationTests using Java 11.0.17 on SHAJ-MAC.local with PID 4821 (started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:29:30,135 INFO org.springframework.boot.SpringApplication [main]  The following 1 profile is active: "test"
+2023-03-13 14:29:30,666 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:29:30,669 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:29:30,852 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 177 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:29:30,863 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:29:30,864 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:29:30,882 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:29:30,883 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:29:30,883 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:29:31,355 INFO org.hibernate.jpa.internal.util.LogHelper [main]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:29:31,401 INFO org.hibernate.Version [main]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-13 14:29:31,560 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 14:29:31,661 WARN com.zaxxer.hikari.HikariConfig [main]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:29:31,662 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Starting...
+2023-03-13 14:29:31,683 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 4801 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:29:31,683 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 14:29:31,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:29:31,884 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:29:31,902 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Start completed.
+2023-03-13 14:29:31,904 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 20 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:29:31,908 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:29:31,908 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:29:31,916 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:29:31,917 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:29:31,917 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:29:31,920 INFO org.hibernate.dialect.Dialect [main]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:29:31,993 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-13 14:29:31,994 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:29:31,994 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-13 14:29:31,994 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-13 14:29:32,004 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-13 14:29:32,004 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 319 ms
+2023-03-13 14:29:32,033 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:29:32,037 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-2 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:29:32,038 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-2 - Starting...
+2023-03-13 14:29:32,078 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-2 - Start completed.
+2023-03-13 14:29:32,079 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:29:32,405 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:29:32,405 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:29:32,508 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:29:32,572 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:29:32,580 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-13 14:29:32,581 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:29:32,588 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:29:32,589 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 14:29:32,593 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 5.938 seconds (JVM running for 170.714)
+2023-03-13 14:29:32,595 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain]  Condition evaluation unchanged
+2023-03-13 14:29:33,746 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:29:34,249 INFO org.springframework.boot.StartupInfoLogger [main]  Started UtilityserviceApplicationTests in 9.419 seconds (JVM running for 10.234)
+2023-03-13 14:29:34,432 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:29:34,434 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-13 14:29:34,444 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-13 14:36:36,245 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher]  Restarting due to 92 class path changes (0 additions, 92 deletions, 0 modifications)
+2023-03-13 14:36:36,249 INFO org.apache.juli.logging.DirectJDKLog [Thread-23]  Pausing ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:36:36,249 INFO org.apache.juli.logging.DirectJDKLog [Thread-23]  Stopping service [Tomcat]
+2023-03-13 14:36:36,252 INFO org.apache.juli.logging.DirectJDKLog [Thread-23]  Stopping ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:36:36,255 INFO org.apache.juli.logging.DirectJDKLog [Thread-23]  Destroying ProtocolHandler ["http-nio-8080"]
+2023-03-13 14:36:38,426 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-23]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:36:38,428 INFO com.zaxxer.hikari.HikariDataSource [Thread-23]  HikariPool-2 - Shutdown initiated...
+2023-03-13 14:36:38,433 INFO com.zaxxer.hikari.HikariDataSource [Thread-23]  HikariPool-2 - Shutdown completed.
+2023-03-13 14:37:20,278 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 4801 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:37:20,278 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "test"
+2023-03-13 14:37:20,395 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:37:20,395 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:37:20,408 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 12 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:37:20,409 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:37:20,410 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:37:20,414 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:37:20,414 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:37:20,414 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 4 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:37:20,465 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-13 14:37:20,465 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-13 14:37:20,465 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-13 14:37:20,475 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-13 14:37:20,475 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 195 ms
+2023-03-13 14:37:20,501 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:37:20,505 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-3 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:37:20,506 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-3 - Starting...
+2023-03-13 14:37:22,936 INFO org.springframework.boot.StartupInfoLogger [main]  Starting UtilityserviceApplicationTests using Java 11.0.17 on SHAJ-MAC.local with PID 4886 (started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-13 14:37:22,937 INFO org.springframework.boot.SpringApplication [main]  The following 1 profile is active: "test"
+2023-03-13 14:37:23,468 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:37:23,470 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-13 14:37:23,616 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 140 ms. Found 2 JPA repository interfaces.
+2023-03-13 14:37:23,626 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-13 14:37:23,627 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-13 14:37:23,643 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:37:23,644 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-13 14:37:23,644 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-03-13 14:37:24,087 INFO org.hibernate.jpa.internal.util.LogHelper [main]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-13 14:37:24,123 INFO org.hibernate.Version [main]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-13 14:37:24,251 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-13 14:37:24,341 WARN com.zaxxer.hikari.HikariConfig [main]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-13 14:37:24,342 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Starting...
+2023-03-13 14:37:24,929 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-3 - Start completed.
+2023-03-13 14:37:24,930 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:37:26,091 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Start completed.
+2023-03-13 14:37:26,107 INFO org.hibernate.dialect.Dialect [main]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-13 14:37:27,647 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:37:27,647 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:37:27,742 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-13 14:37:27,755 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:37:27,759 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:37:27,836 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-13 14:37:27,843 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-13 14:37:27,847 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 12.598 seconds (JVM running for 645.989)
+2023-03-13 14:37:27,848 INFO org.springframework.boot.devtools.autoconfigure.ConditionEvaluationDeltaLoggingListener [restartedMain]  Condition evaluation unchanged
+2023-03-13 14:37:28,844 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-13 14:37:29,330 INFO org.springframework.boot.StartupInfoLogger [main]  Started UtilityserviceApplicationTests in 11.701 seconds (JVM running for 12.475)
+2023-03-13 14:37:29,471 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:37:29,472 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-13 14:37:32,254 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-13 14:43:24,694 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-13 14:43:24,695 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-13 14:43:24,696 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-13 14:53:31,275 INFO org.springframework.boot.devtools.autoconfigure.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener [File Watcher]  Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-03-13 14:53:31,278 INFO org.apache.juli.logging.DirectJDKLog [Thread-43]  Stopping service [Tomcat]
+2023-03-13 14:53:31,279 INFO org.apache.juli.logging.DirectJDKLog [Thread-43]  Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-03-13 14:53:31,282 WARN org.apache.juli.logging.DirectJDKLog [Thread-43]  The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-8-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@11.0.17/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@11.0.17/java.util.concurrent.locks.LockSupport.park(LockSupport.java:194)
+ java.base@11.0.17/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2081)
+ java.base@11.0.17/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:433)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:244)
+ app//io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ app//io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+ app//io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ app//io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.base@11.0.17/java.lang.Thread.run(Thread.java:829)
+2023-03-13 14:53:33,455 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [Thread-43]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-13 14:53:33,456 INFO com.zaxxer.hikari.HikariDataSource [Thread-43]  HikariPool-3 - Shutdown initiated...
+2023-03-13 14:53:33,463 INFO com.zaxxer.hikari.HikariDataSource [Thread-43]  HikariPool-3 - Shutdown completed.

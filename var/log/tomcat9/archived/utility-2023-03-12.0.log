@@ -1,0 +1,24 @@
+2023-03-12 19:49:00,077 INFO org.springframework.boot.StartupInfoLogger [main]  Starting UtilityserviceApplicationTests using Java 11.0.17 on SHAJ-MAC.local with PID 28924 (started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-12 19:49:00,078 INFO org.springframework.boot.SpringApplication [main]  The following 1 profile is active: "test"
+2023-03-12 19:49:00,742 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 19:49:00,744 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-12 19:49:00,941 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 188 ms. Found 2 JPA repository interfaces.
+2023-03-12 19:49:00,957 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-12 19:49:00,959 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-12 19:49:00,979 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 19:49:00,979 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [main]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco.postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-12 19:49:00,980 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [main]  Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-03-12 19:49:01,517 INFO org.hibernate.jpa.internal.util.LogHelper [main]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-12 19:49:01,579 INFO org.hibernate.Version [main]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-12 19:49:01,760 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [main]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-12 19:49:01,879 WARN com.zaxxer.hikari.HikariConfig [main]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-12 19:49:01,880 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Starting...
+2023-03-12 19:49:02,253 INFO com.zaxxer.hikari.HikariDataSource [main]  HikariPool-1 - Start completed.
+2023-03-12 19:49:02,280 INFO org.hibernate.dialect.Dialect [main]  HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-03-12 19:49:02,976 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [main]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-12 19:49:02,984 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [main]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 19:49:04,218 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [main]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-12 19:49:04,722 INFO org.springframework.boot.StartupInfoLogger [main]  Started UtilityserviceApplicationTests in 9.97 seconds (JVM running for 10.772)
+2023-03-12 19:49:04,884 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-12 19:49:04,885 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-12 19:49:04,894 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.

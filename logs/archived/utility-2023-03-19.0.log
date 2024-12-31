@@ -1,0 +1,1352 @@
+2023-03-19 17:54:48,656 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 5836 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 17:54:48,658 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 17:54:48,658 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 17:54:48,694 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 17:54:48,695 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 17:54:48,695 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 17:54:49,325 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 17:54:49,326 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 17:54:49,391 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2023-03-19 17:54:49,405 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 17:54:49,406 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 17:54:49,424 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 17:54:49,425 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 17:54:49,425 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-03-19 17:54:49,932 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 17:54:49,939 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 17:54:49,940 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 17:54:49,940 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 17:54:49,992 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 17:54:49,993 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1298 ms
+2023-03-19 17:54:50,168 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 17:54:50,217 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 17:54:50,332 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 17:54:50,407 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 17:54:50,408 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 17:54:50,734 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 17:54:50,746 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 17:55:38,173 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 17:55:38,196 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 17:55:38,207 WARN org.springframework.context.support.AbstractApplicationContext [restartedMain]  Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationPrperties': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'sms.gateway.url' in value "${sms.gateway.url}"
+2023-03-19 17:55:38,208 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 17:55:38,211 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Shutdown initiated...
+2023-03-19 17:55:38,454 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Shutdown completed.
+2023-03-19 17:55:38,457 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Stopping service [Tomcat]
+2023-03-19 17:55:38,468 INFO org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener [restartedMain]  
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-03-19 17:55:38,486 ERROR org.springframework.boot.SpringApplication [restartedMain]  Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'applicationPrperties': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'sms.gateway.url' in value "${sms.gateway.url}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.reddot.utilityservice.UtilityServiceApplication.main(UtilityServiceApplication.java:11)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'sms.gateway.url' in value "${sms.gateway.url}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1332)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 22 common frames omitted
+2023-03-19 17:57:17,974 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 5858 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 17:57:17,974 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 17:57:17,975 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 17:57:18,004 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 17:57:18,005 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 17:57:18,005 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 17:57:18,418 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 17:57:18,419 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 17:57:18,465 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 42 ms. Found 2 JPA repository interfaces.
+2023-03-19 17:57:18,474 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 17:57:18,475 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 17:57:18,488 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 17:57:18,489 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 17:57:18,489 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-19 17:57:18,856 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 17:57:18,861 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 17:57:18,862 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 17:57:18,862 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 17:57:18,904 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 17:57:18,904 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 899 ms
+2023-03-19 17:57:19,025 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 17:57:19,049 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 17:57:19,126 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 17:57:19,176 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 17:57:19,176 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 17:57:19,563 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 17:57:19,574 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 17:58:06,040 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 17:58:06,046 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 17:58:07,291 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 17:58:07,591 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 17:58:07,605 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 17:58:07,615 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 17:58:07,631 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 49.919 seconds (JVM running for 55.452)
+2023-03-19 17:59:17,022 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 17:59:17,023 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 17:59:17,024 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-19 17:59:17,041 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 3dbd1b81-62b3-4779-b66d-27d0b6e55db5 REST Request - [HTTP METHOD:GET] [PATH INFO:/api/utility/detail] [REQUEST PARAMETERS:{utilityCode=WASA_GENERAL-BILL}] [REQUEST BODY:] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 17:59:17,128 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 3dbd1b81-62b3-4779-b66d-27d0b6e55db5  [RESPONSE:{"utilityCode":"WASA_GENERAL-BILL","utilityTitle":"WASA","utilityImage":"http://api.sslwireless.com/uploads/utility_logo/wasa.png","flow":"1","fieldItemList":[{"key":"account_no","label":"Account number","fieldType":"text","dataType":"text","regex":"[a-zA-Z_0-9]{1,30}","hint":"E.g. xxxxxxxxx","options":null,"required":true},{"key":"billno","label":"Bill Number","fieldType":"text","dataType":"numeric","regex":"^(?:\\+?88|0088)?01[15-9]\\d{8}$","hint":"E.g. xxxxxxxxx","options":null,"required":true}]}] [REQUEST TIME:Sun Mar 19 17:59:17 BDT 2023] [ELAPSED TIME:99ms]
+2023-03-19 17:59:31,757 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 180e99dc-1aa6-4bfb-8491-fcb8f002df5c REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331836890","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 17:59:32,632 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 180e99dc-1aa6-4bfb-8491-fcb8f002df5c  [RESPONSE:{"transaction_id":"OTA2NDE4MzMxODM2ODkwMTY3OTIyNzE3MTc5Ng==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 17:59:31 BDT 2023] [ELAPSED TIME:875ms]
+2023-03-19 18:00:16,910 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 36b429ef-a603-4e23-9ddb-384f0083b3be REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "OTA2NDE4MzMxODM2ODkwMTY3OTIyNzE3MTc5Ng==","walletNo": "018331836890","pin": "2233","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:00:17,104 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-4] 36b429ef-a603-4e23-9ddb-384f0083b3be {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 18:00:17,110 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 36b429ef-a603-4e23-9ddb-384f0083b3be Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 18:00:17,110 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 36b429ef-a603-4e23-9ddb-384f0083b3be  [RESPONSE:{"statusCode":"4018","message":"FROM_AC_STATUS_NOT_VALID"}] [REQUEST TIME:Sun Mar 19 18:00:16 BDT 2023] [ELAPSED TIME:200ms]
+2023-03-19 18:05:04,952 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-6] 72dc30e8-add3-4df7-a46a-fb74b6d2ba21 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"016848545960","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:05:05,431 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-6] 72dc30e8-add3-4df7-a46a-fb74b6d2ba21  [RESPONSE:{"transaction_id":"MjY1NTE2ODQ4NTQ1OTYwMTY3OTIyNzUwNDk1Ng==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 18:05:04 BDT 2023] [ELAPSED TIME:479ms]
+2023-03-19 18:05:46,438 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-7] cd2f45b8-7d54-42c6-b8e7-60d055f73379 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "MjY1NTE2ODQ4NTQ1OTYwMTY3OTIyNzUwNDk1Ng==","walletNo": "016848545960","pin": "2233","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:05:46,529 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-7] cd2f45b8-7d54-42c6-b8e7-60d055f73379 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 401 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 18:05:46,532 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-7] cd2f45b8-7d54-42c6-b8e7-60d055f73379 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 18:05:46,533 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-7] cd2f45b8-7d54-42c6-b8e7-60d055f73379  [RESPONSE:{"statusCode":"4001","message":"INVALID_PIN"}] [REQUEST TIME:Sun Mar 19 18:05:46 BDT 2023] [ELAPSED TIME:95ms]
+2023-03-19 18:05:54,567 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-9] 22d1ac31-3bb4-4a16-a26a-f414243574a0 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "MjY1NTE2ODQ4NTQ1OTYwMTY3OTIyNzUwNDk1Ng==","walletNo": "016848545960","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:05:55,529 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-10] 0198a9ec-f582-4a09-bf84-20d6418573e6 REST Request - [HTTP METHOD:GET] [PATH INFO:/notification_service-0.0.1-TESTING/send_sms] [REQUEST PARAMETERS:{text=Pyament of TK 100.00 made to WASA successfully. Fee TK 4.00Balance TK 11106.930000TrxID FB9F37E14875 at 2023-03-19T12:05:54.787 0000, msisdn=8801684854596, telcoId=1}] [REQUEST BODY:] [REMOTE ADDRESS:127.0.0.1]
+2023-03-19 18:05:55,534 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-10] 0198a9ec-f582-4a09-bf84-20d6418573e6 null
+2023-03-19 18:05:55,548 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-9] 22d1ac31-3bb4-4a16-a26a-f414243574a0 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 18:05:55,548 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-9] 22d1ac31-3bb4-4a16-a26a-f414243574a0  [RESPONSE:{"statusCode":null,"message":"No message available"}] [REQUEST TIME:Sun Mar 19 18:05:54 BDT 2023] [ELAPSED TIME:981ms]
+2023-03-19 18:17:36,639 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 18:17:36,642 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 18:17:37,129 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-19 18:17:43,994 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 5974 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 18:17:43,995 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 18:17:43,995 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 18:17:44,028 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 18:17:44,029 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 18:17:44,029 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 18:17:44,582 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 18:17:44,583 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 18:17:44,637 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 48 ms. Found 2 JPA repository interfaces.
+2023-03-19 18:17:44,650 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 18:17:44,653 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 18:17:44,678 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 18:17:44,680 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 18:17:44,681 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
+2023-03-19 18:17:45,130 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 18:17:45,136 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 18:17:45,136 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 18:17:45,137 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 18:17:45,183 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 18:17:45,183 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1153 ms
+2023-03-19 18:17:45,333 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 18:17:45,365 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 18:17:45,466 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 18:17:45,526 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 18:17:45,527 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 18:17:45,848 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 18:17:45,860 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 18:18:37,325 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 18:18:37,333 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 18:18:38,439 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 18:18:38,729 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 18:18:38,742 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 18:18:38,758 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 18:18:38,770 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 55.08 seconds (JVM running for 60.621)
+2023-03-19 18:20:14,391 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 18:20:14,392 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 18:20:14,393 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-19 18:20:14,400 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 66724074-e4ba-4a91-9d22-62e53d6504e8 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"016848545960","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:20:15,176 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 66724074-e4ba-4a91-9d22-62e53d6504e8  [RESPONSE:{"transaction_id":"NDcwNjE2ODQ4NTQ1OTYwMTY3OTIyODQxNDQ4Mw==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 18:20:14 BDT 2023] [ELAPSED TIME:778ms]
+2023-03-19 18:20:31,028 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 17bd72dd-cdf4-4cfd-b165-855aa5ed8a99 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NDcwNjE2ODQ4NTQ1OTYwMTY3OTIyODQxNDQ4Mw==","walletNo": "016848545960","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 18:20:31,209 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-3] 17bd72dd-cdf4-4cfd-b165-855aa5ed8a99 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 18:20:31,214 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-3] 17bd72dd-cdf4-4cfd-b165-855aa5ed8a99 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 18:20:31,215 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 17bd72dd-cdf4-4cfd-b165-855aa5ed8a99  [RESPONSE:{"statusCode":"4018","message":"FROM_AC_STATUS_NOT_VALID"}] [REQUEST TIME:Sun Mar 19 18:20:31 BDT 2023] [ELAPSED TIME:187ms]
+2023-03-19 18:48:34,929 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=21m18s908ms).
+2023-03-19 18:49:43,258 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 18:49:43,264 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 18:49:43,438 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-19 18:49:56,315 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 6098 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 18:49:56,316 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 18:49:56,317 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 18:49:56,357 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 18:49:56,358 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 18:49:56,358 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 18:49:56,930 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 18:49:56,930 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 18:49:56,989 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 52 ms. Found 2 JPA repository interfaces.
+2023-03-19 18:49:57,003 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 18:49:57,004 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 18:49:57,022 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 18:49:57,022 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 18:49:57,022 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-19 18:49:57,461 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 18:49:57,468 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 18:49:57,468 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 18:49:57,469 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 18:49:57,519 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 18:49:57,519 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1160 ms
+2023-03-19 18:49:57,666 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 18:49:57,700 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 18:49:57,803 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 18:49:57,872 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 18:49:57,872 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 18:49:58,183 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 18:49:58,195 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 18:50:42,896 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 18:50:42,905 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 18:50:44,434 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 18:50:44,735 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 18:50:44,749 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 18:50:44,758 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 18:50:44,771 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 48.776 seconds (JVM running for 54.758)
+2023-03-19 19:05:51,310 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m52s969ms).
+2023-03-19 19:06:06,386 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 19:06:06,386 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 19:06:06,387 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-19 19:06:06,397 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 0674605f-95bb-417a-8327-6f2b5df66b62 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NDcwNjE2ODQ4NTQ1OTYwMTY3OTIyODQxNDQ4Mw==","walletNo": "016848545960","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:08:18,551 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m51s202ms).
+2023-03-19 19:08:54,647 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-2] 0674605f-95bb-417a-8327-6f2b5df66b62 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:08:54,662 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-2] 0674605f-95bb-417a-8327-6f2b5df66b62 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 19:08:54,664 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 0674605f-95bb-417a-8327-6f2b5df66b62  [RESPONSE:{"statusCode":"4018","message":"FROM_AC_STATUS_NOT_VALID"}] [REQUEST TIME:Sun Mar 19 19:06:06 BDT 2023] [ELAPSED TIME:168271ms]
+2023-03-19 19:09:03,471 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 55fc76ea-a988-487d-85b1-391763f80aa6 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NDcwNjE2ODQ4NTQ1OTYwMTY3OTIyODQxNDQ4Mw==","walletNo": "016848545960","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:09:18,285 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-4] 55fc76ea-a988-487d-85b1-391763f80aa6 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:09:18,289 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-4] 55fc76ea-a988-487d-85b1-391763f80aa6 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 19:09:18,290 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 55fc76ea-a988-487d-85b1-391763f80aa6  [RESPONSE:{"statusCode":"4018","message":"FROM_AC_STATUS_NOT_VALID"}] [REQUEST TIME:Sun Mar 19 19:09:03 BDT 2023] [ELAPSED TIME:14819ms]
+2023-03-19 19:09:21,761 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-6] 2c2209f5-6843-4543-a559-d1931d2e8602 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NDcwNjE2ODQ4NTQ1OTYwMTY3OTIyODQxNDQ4Mw==","walletNo": "016848545960","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:12:15,898 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m57s347ms).
+2023-03-19 19:12:17,218 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-6] 2c2209f5-6843-4543-a559-d1931d2e8602 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:12:17,221 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-6] 2c2209f5-6843-4543-a559-d1931d2e8602 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 19:12:17,221 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-6] 2c2209f5-6843-4543-a559-d1931d2e8602  [RESPONSE:{"statusCode":"4018","message":"FROM_AC_STATUS_NOT_VALID"}] [REQUEST TIME:Sun Mar 19 19:09:21 BDT 2023] [ELAPSED TIME:175460ms]
+2023-03-19 19:12:51,094 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] 7304a328-f211-46ba-9b33-80b9faaddcdb REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:13:02,604 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-8] 7304a328-f211-46ba-9b33-80b9faaddcdb  [RESPONSE:{"transaction_id":"NzQyMTgzMzE4MzcxMTAxNjc5MjMxNTcxMTA3","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 19:12:51 BDT 2023] [ELAPSED TIME:11510ms]
+2023-03-19 19:13:23,493 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-9] 5bb1f63a-a40d-4993-8b58-4305c29578fc REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NzQyMTgzMzE4MzcxMTAxNjc5MjMxNTcxMTA3","walletNo": "018331837110","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:13:31,790 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-9] 5bb1f63a-a40d-4993-8b58-4305c29578fc  [RESPONSE:{"code":null,"message":"Txn Successful","status":"PROCESSED","txnId":"ADC534171D79","amount":"100.00","fee":"4.00","commission":"0","balanceFrom":"382.020000","balanceTo":"-1","ticket":"N/A","traceNo":"N/A","fromAccount":"018331837110","toAccount":"016241112289","txnTime":"2023-03-19T13:13:26.780+0000","txnType":"UTILITY_BILL_PAYMENT_WASA_SSL","txnTypeName":"Wasa Bill Payment Via SSL","balance":null}] [REQUEST TIME:Sun Mar 19 19:13:23 BDT 2023] [ELAPSED TIME:8297ms]
+2023-03-19 19:45:54,802 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:45:54,806 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 19:45:54,941 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-19 19:46:38,645 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 6271 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 19:46:38,646 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 19:46:38,646 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 19:46:38,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 19:46:38,677 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 19:46:38,678 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 19:46:39,219 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:46:39,219 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 19:46:39,279 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2023-03-19 19:46:39,293 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:46:39,294 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 19:46:39,311 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:46:39,312 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:46:39,312 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-03-19 19:46:39,771 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 19:46:39,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:46:39,777 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 19:46:39,778 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 19:46:39,824 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 19:46:39,825 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1147 ms
+2023-03-19 19:46:39,970 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 19:46:40,002 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 19:46:40,103 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 19:46:40,165 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 19:46:40,166 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 19:46:40,480 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 19:46:40,491 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 19:47:25,150 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 19:47:25,173 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:47:27,532 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 19:47:27,823 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 19:47:27,836 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:47:27,845 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 19:47:27,859 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 49.523 seconds (JVM running for 55.081)
+2023-03-19 19:47:28,216 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:47:28,219 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 19:47:28,362 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
+2023-03-19 19:47:44,344 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 6280 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 19:47:44,345 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 19:47:44,346 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 19:47:44,376 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 19:47:44,377 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 19:47:44,378 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 19:47:44,834 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:47:44,835 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 19:47:44,879 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 40 ms. Found 2 JPA repository interfaces.
+2023-03-19 19:47:44,887 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:47:44,888 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 19:47:44,901 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:47:44,901 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:47:44,902 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-19 19:47:45,286 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 19:47:45,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:47:45,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 19:47:45,292 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 19:47:45,336 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 19:47:45,336 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 958 ms
+2023-03-19 19:47:45,460 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 19:47:45,484 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 19:47:45,562 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 19:47:45,614 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 19:47:45,614 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 19:47:45,909 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 19:47:45,919 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 19:48:31,694 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 19:48:31,700 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:48:32,741 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 19:48:32,976 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 19:48:32,989 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:48:32,996 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 19:48:33,007 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 48.949 seconds (JVM running for 54.478)
+2023-03-19 19:48:53,686 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 19:48:53,698 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 19:48:53,700 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1]  Completed initialization in 2 ms
+2023-03-19 19:48:53,711 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:48:59,531 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@14700740 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:03,905 WARN reactor.util.Loggers$Slf4JLogger [reactor-http-nio-2]  [45769ff4-2, L:/192.168.1.16:57626 - R:api.sslwireless.com/103.26.139.15:80] The connection observed an error
+java.io.IOException: Operation timed out
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:49:03,916 DEBUG com.reddot.utilityservice.external_comunication.ssl_services.apiclient.SSLApiClient [scheduling-1]  {}
+org.springframework.web.reactive.function.client.WebClientRequestException: Operation timed out; nested exception is java.io.IOException: Operation timed out
+	at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ Request to GET http://api.sslwireless.com/api/service-list [DefaultWebClient]
+Original Stack Trace:
+		at org.springframework.web.reactive.function.client.ExchangeFunctions$DefaultExchangeFunction.lambda$wrapException$9(ExchangeFunctions.java:141)
+		at reactor.core.publisher.MonoErrorSupplied.subscribe(MonoErrorSupplied.java:55)
+		at reactor.core.publisher.Mono.subscribe(Mono.java:4490)
+		at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onError(FluxOnErrorResume.java:103)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onError(FluxPeek.java:222)
+		at reactor.core.publisher.MonoNext$NextSubscriber.onError(MonoNext.java:93)
+		at reactor.core.publisher.MonoFlatMapMany$FlatMapManyMain.onError(MonoFlatMapMany.java:204)
+		at reactor.core.publisher.SerializedSubscriber.onError(SerializedSubscriber.java:124)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.whenError(FluxRetryWhen.java:225)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenOtherSubscriber.onError(FluxRetryWhen.java:274)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onError(FluxContextWrite.java:121)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.drain(FluxConcatMap.java:415)
+		at reactor.core.publisher.FluxConcatMap$ConcatMapImmediate.onNext(FluxConcatMap.java:251)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.EmitterProcessor.drain(EmitterProcessor.java:537)
+		at reactor.core.publisher.EmitterProcessor.tryEmitNext(EmitterProcessor.java:343)
+		at reactor.core.publisher.SinkManySerialized.tryEmitNext(SinkManySerialized.java:100)
+		at reactor.core.publisher.InternalManySink.emitNext(InternalManySink.java:27)
+		at reactor.core.publisher.FluxRetryWhen$RetryWhenMainSubscriber.onError(FluxRetryWhen.java:190)
+		at reactor.core.publisher.MonoCreate$DefaultMonoSink.error(MonoCreate.java:201)
+		at reactor.netty.http.client.HttpClientConnect$HttpObserver.onUncaughtException(HttpClientConnect.java:399)
+		at reactor.netty.ReactorNetty$CompositeConnectionObserver.onUncaughtException(ReactorNetty.java:695)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$DisposableAcquire.onUncaughtException(DefaultPooledConnectionProvider.java:211)
+		at reactor.netty.resources.DefaultPooledConnectionProvider$PooledConnection.onUncaughtException(DefaultPooledConnectionProvider.java:464)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:245)
+		at reactor.netty.channel.FluxReceive.onInboundError(FluxReceive.java:466)
+		at reactor.netty.channel.ChannelOperations.onInboundError(ChannelOperations.java:488)
+		at reactor.netty.channel.ChannelOperationsHandler.exceptionCaught(ChannelOperationsHandler.java:144)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireExceptionCaught(CombinedChannelDuplexHandler.java:424)
+		at io.netty.channel.ChannelHandlerAdapter.exceptionCaught(ChannelHandlerAdapter.java:92)
+		at io.netty.channel.CombinedChannelDuplexHandler$1.fireExceptionCaught(CombinedChannelDuplexHandler.java:145)
+		at io.netty.channel.ChannelInboundHandlerAdapter.exceptionCaught(ChannelInboundHandlerAdapter.java:143)
+		at io.netty.channel.CombinedChannelDuplexHandler.exceptionCaught(CombinedChannelDuplexHandler.java:231)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+		at io.netty.channel.AbstractChannelHandlerContext.fireExceptionCaught(AbstractChannelHandlerContext.java:317)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.exceptionCaught(DefaultChannelPipeline.java:1377)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:346)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeExceptionCaught(AbstractChannelHandlerContext.java:325)
+		at io.netty.channel.DefaultChannelPipeline.fireExceptionCaught(DefaultChannelPipeline.java:907)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.handleReadException(AbstractNioByteChannel.java:125)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:177)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.ssl_services.apiclient.SSLApiClient.callGet(SSLApiClient.java:78)
+		at com.reddot.utilityservice.external_comunication.ssl_services.gateway.SSLUtilityGateway.getUtilityServices(SSLUtilityGateway.java:48)
+		at com.reddot.utilityservice.features.common.service.UtilityService.getAllServices(UtilityService.java:85)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+		at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+		at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+		at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+		at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+		at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+		at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: java.io.IOException: Operation timed out
+	at java.base/sun.nio.ch.FileDispatcherImpl.read0(Native Method)
+	at java.base/sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:39)
+	at java.base/sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:276)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:233)
+	at java.base/sun.nio.ch.IOUtil.read(IOUtil.java:223)
+	at java.base/sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:356)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:259)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:49:03,918 ERROR org.springframework.scheduling.support.TaskUtils$LoggingErrorHandler [scheduling-1]  Unexpected error occurred in scheduled task
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.ssl_services.apiclient.SSLApiClient.callGet(SSLApiClient.java:84)
+	at com.reddot.utilityservice.external_comunication.ssl_services.gateway.SSLUtilityGateway.getUtilityServices(SSLUtilityGateway.java:48)
+	at com.reddot.utilityservice.features.common.service.UtilityService.getAllServices(UtilityService.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:84)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:305)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 19:49:04,534 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@4e70c976 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:09,538 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@ed4d13e (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:14,542 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@4026a09f (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:19,547 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@1d5049a5 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:24,552 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@53f4c523 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:49:24,554 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 SQL Error: 0, SQLState: 08006
+2023-03-19 19:49:24,554 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 HikariPool-1 - Connection is not available, request timed out after 30030ms.
+2023-03-19 19:49:24,554 WARN org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 SQL Error: 17002, SQLState: 08006
+2023-03-19 19:49:24,555 ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 IO Error: Invalid Operation, NOT Connected
+2023-03-19 19:49:24,588 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 19:49:24,590 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-1] e5337122-cefe-4932-bc33-fd807479d244  [RESPONSE:{"statusCode":"400","message":"Request processing failed. Please try again later"}] [REQUEST TIME:Sun Mar 19 19:48:53 BDT 2023] [ELAPSED TIME:30884ms]
+2023-03-19 19:49:53,308 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:49:58,957 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@1960d166 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:50:03,962 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@3a6b418a (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:50:08,967 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@3504e58 (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:50:13,969 WARN com.zaxxer.hikari.pool.PoolBase [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e HikariPool-1 - Failed to validate connection oracle.jdbc.driver.T4CConnection@3c66941e (IO Error: Invalid Operation, NOT Connected). Possibly consider using a shorter maxLifetime value.
+2023-03-19 19:50:14,161 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 3972652f-3edc-4293-b17e-e13fc7055b4e  [RESPONSE:{"transaction_id":"MjUwMjE4MzMxODM3MTEwMTY3OTIzMzc5MzMxMQ==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 19:49:53 BDT 2023] [ELAPSED TIME:20853ms]
+2023-03-19 19:52:17,261 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:52:17,265 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 19:52:31,471 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 6312 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 19:52:31,472 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 19:52:31,472 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 19:52:31,507 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 19:52:31,507 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 19:52:31,508 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 19:52:32,068 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:52:32,068 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 19:52:32,135 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 59 ms. Found 2 JPA repository interfaces.
+2023-03-19 19:52:32,148 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:52:32,149 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 19:52:32,167 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:52:32,168 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:52:32,168 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2023-03-19 19:52:32,602 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 19:52:32,608 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:52:32,609 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 19:52:32,609 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 19:52:32,655 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 19:52:32,656 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1146 ms
+2023-03-19 19:52:32,803 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 19:52:32,835 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 19:52:32,938 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 19:52:33,004 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 19:52:33,005 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 19:52:33,578 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 19:52:33,592 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 19:53:20,903 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 19:53:20,911 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 19:53:24,649 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 19:53:24,931 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 19:53:24,945 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:53:24,953 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 19:53:24,967 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 53.816 seconds (JVM running for 59.41)
+2023-03-19 19:53:38,867 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 19:53:38,868 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 19:53:38,869 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-19 19:53:38,877 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 56871f64-ea3f-42c9-88f9-a274d42429f5 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:53:39,784 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 56871f64-ea3f-42c9-88f9-a274d42429f5  [RESPONSE:{"transaction_id":"ODkxNDE4MzMxODM3MTEwMTY3OTIzNDAxODk3Mg==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 19:53:38 BDT 2023] [ELAPSED TIME:910ms]
+2023-03-19 19:53:53,914 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] ce57d67f-cb91-4c97-8470-4eae7751ee0a REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "ODkxNDE4MzMxODM3MTEwMTY3OTIzNDAxODk3Mg==","walletNo": "018331837110","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:54:04,233 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] ce57d67f-cb91-4c97-8470-4eae7751ee0a  [RESPONSE:{"code":null,"message":"Txn Successful","status":"PROCESSED","txnId":"334776A56492","amount":"100.00","fee":"4.00","commission":"0","balanceFrom":"278.020000","balanceTo":"-1","ticket":"N/A","traceNo":"N/A","fromAccount":"018331837110","toAccount":"016241112289","txnTime":"2023-03-19T13:54:03.306+0000","txnType":"UTILITY_BILL_PAYMENT_WASA_SSL","txnTypeName":"Wasa Bill Payment Via SSL","balance":null}] [REQUEST TIME:Sun Mar 19 19:53:53 BDT 2023] [ELAPSED TIME:10319ms]
+2023-03-19 19:55:06,261 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-5] 3542ab36-679d-47cc-a5cd-dfb118701665 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:55:07,376 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-5] 3542ab36-679d-47cc-a5cd-dfb118701665  [RESPONSE:{"transaction_id":"MTM5MTgzMzE4MzcxMTAxNjc5MjM0MTA2MjYz","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 19:55:06 BDT 2023] [ELAPSED TIME:1115ms]
+2023-03-19 19:55:20,072 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-7] 3d9fd7c8-32ee-437d-92a3-b9c369787952 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "MTM5MTgzMzE4MzcxMTAxNjc5MjM0MTA2MjYz","walletNo": "018331837110","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 19:58:43,070 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m7s615ms).
+2023-03-19 19:58:43,542 ERROR com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-7] 3d9fd7c8-32ee-437d-92a3-b9c369787952 java.io.IOException: Broken pipe
+2023-03-19 19:59:09,316 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Starting UtilityServiceApplication using Java 11.0.17 on SHAJ-MAC.local with PID 6342 (/Users/user/Documents/reddot/backend/utilityservice/target/classes started by user in /Users/user/Documents/reddot/backend/utilityservice)
+2023-03-19 19:59:09,317 DEBUG org.springframework.boot.StartupInfoLogger [restartedMain]  Running with Spring Boot v2.7.7, Spring v5.3.24
+2023-03-19 19:59:09,318 INFO org.springframework.boot.SpringApplication [restartedMain]  The following 1 profile is active: "stage"
+2023-03-19 19:59:09,354 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  The Class-Path manifest attribute in /Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/ojdbc8-21.4.0.0.jar referenced one or more files that do not exist: file:/Users/user/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.4.0.0/oraclepki.jar
+2023-03-19 19:59:09,354 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-19 19:59:09,355 INFO org.springframework.boot.logging.DeferredLog [restartedMain]  For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-19 19:59:09,966 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:59:09,966 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-03-19 19:59:10,028 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 55 ms. Found 2 JPA repository interfaces.
+2023-03-19 19:59:10,041 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-19 19:59:10,042 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-19 19:59:10,061 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.common.repository.TransactionRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:59:10,062 INFO org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport [restartedMain]  Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.reddot.utilityservice.features.desco_postpaid.repository.DescoPostpaidRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+2023-03-19 19:59:10,062 INFO org.springframework.data.repository.config.RepositoryConfigurationDelegate [restartedMain]  Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2023-03-19 19:59:10,523 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat initialized with port(s): 8080 (http)
+2023-03-19 19:59:10,530 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-19 19:59:10,530 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting service [Tomcat]
+2023-03-19 19:59:10,530 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting Servlet engine: [Apache Tomcat/9.0.70]
+2023-03-19 19:59:10,576 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Initializing Spring embedded WebApplicationContext
+2023-03-19 19:59:10,577 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain]  Root WebApplicationContext: initialization completed in 1221 ms
+2023-03-19 19:59:10,725 INFO org.hibernate.jpa.internal.util.LogHelper [restartedMain]  HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-03-19 19:59:10,757 INFO org.hibernate.Version [restartedMain]  HHH000412: Hibernate ORM core version 5.6.14.Final
+2023-03-19 19:59:10,857 INFO org.hibernate.annotations.common.reflection.java.JavaReflectionManager [restartedMain]  HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-03-19 19:59:10,918 WARN com.zaxxer.hikari.HikariConfig [restartedMain]  HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2023-03-19 19:59:10,919 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Starting...
+2023-03-19 19:59:11,798 INFO com.zaxxer.hikari.HikariDataSource [restartedMain]  HikariPool-1 - Start completed.
+2023-03-19 19:59:11,811 INFO org.hibernate.dialect.Dialect [restartedMain]  HHH000400: Using dialect: org.hibernate.dialect.Oracle12cDialect
+2023-03-19 20:00:00,642 INFO org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [restartedMain]  HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-03-19 20:00:00,649 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [restartedMain]  Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 20:00:01,383 WARN org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration [restartedMain]  spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-03-19 20:00:01,669 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain]  LiveReload server is running on port 35729
+2023-03-19 20:00:01,682 INFO org.apache.juli.logging.DirectJDKLog [restartedMain]  Starting ProtocolHandler ["http-nio-8080"]
+2023-03-19 20:00:01,690 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain]  Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-19 20:00:01,703 INFO org.springframework.boot.StartupInfoLogger [restartedMain]  Started UtilityServiceApplication in 52.698 seconds (JVM running for 58.28)
+2023-03-19 20:03:10,246 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s336ms).
+2023-03-19 20:03:16,663 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-2]  Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-19 20:03:16,663 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Initializing Servlet 'dispatcherServlet'
+2023-03-19 20:03:16,664 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2]  Completed initialization in 1 ms
+2023-03-19 20:03:16,674 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 04b877f9-c6e7-446c-8e62-c4ccd40bc817 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 20:03:17,499 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-2] 04b877f9-c6e7-446c-8e62-c4ccd40bc817  [RESPONSE:{"transaction_id":"NDE0NDE4MzMxODM3MTEwMTY3OTIzNDU5Njc3Mw==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 20:03:16 BDT 2023] [ELAPSED TIME:828ms]
+2023-03-19 20:03:30,875 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 2478db5d-f04a-40d6-8681-e565ed90d581 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "NDE0NDE4MzMxODM3MTEwMTY3OTIzNDU5Njc3Mw==","walletNo": "018331837110","pin": "2468","notificationNumber": "01833184084"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 20:03:44,595 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-3] 2478db5d-f04a-40d6-8681-e565ed90d581  [RESPONSE:{"code":null,"message":"Txn Successful","status":"PROCESSED","txnId":"8A2447AB7C4","amount":"100.00","fee":"4.00","commission":"0","balanceFrom":"70.020000","balanceTo":"-1","ticket":"N/A","traceNo":"N/A","fromAccount":"018331837110","toAccount":"016241112289","txnTime":"2023-03-19T14:03:35.747+0000","txnType":"UTILITY_BILL_PAYMENT_WASA_SSL","txnTypeName":"Wasa Bill Payment Via SSL","balance":null}] [REQUEST TIME:Sun Mar 19 20:03:30 BDT 2023] [ELAPSED TIME:13720ms]
+2023-03-19 20:04:33,435 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 98fa707b-aae7-4468-b20d-7318533e9ab3 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill-info] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode":"WASA_GENERAL-BILL","walletNo":"018331837110","dynamicFields":{"account_no":"0302109157","billno":"201000451348"}}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 20:04:34,188 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-4] 98fa707b-aae7-4468-b20d-7318533e9ab3  [RESPONSE:{"transaction_id":"OTQzMDE4MzMxODM3MTEwMTY3OTIzNDY3MzQzOA==","due_amount":"100","infoItemArrayList":[{"label":"Bill amount","value":"80"},{"label":"Vat amount","value":"10"},{"label":"Other amount","value":"10"},{"label":"Total amount","value":"100"}]}] [REQUEST TIME:Sun Mar 19 20:04:33 BDT 2023] [ELAPSED TIME:753ms]
+2023-03-19 20:04:50,680 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-5] 41347b05-bd60-456a-b8b3-119481a47510 REST Request - [HTTP METHOD:POST] [PATH INFO:/api/utility/bill_payment] [REQUEST PARAMETERS:{}] [REQUEST BODY:{"featureCode": "WASA_GENERAL-BILL","transactionId": "OTQzMDE4MzMxODM3MTEwMTY3OTIzNDY3MzQzOA==","walletNo": "018331837110","pin": "2468","notificationNumber": "01833184036"}] [REMOTE ADDRESS:0:0:0:0:0:0:0:1]
+2023-03-19 20:04:50,992 DEBUG com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient [http-nio-8080-exec-5] 41347b05-bd60-456a-b8b3-119481a47510 {}
+com.reddot.utilityservice.custom_exceptions.ApplicationException: null
+	at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Error has been observed at the following site(s):
+	*__checkpoint ⇢ 400 from POST http://103.191.178.79:9090/mfs-core-staging/rest/v1/api/txn [DefaultWebClient]
+Original Stack Trace:
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.lambda$callPost$0(CoreApiClient.java:36)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:125)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:151)
+		at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:107)
+		at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:299)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:337)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1839)
+		at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:160)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:260)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:413)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:419)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:473)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:702)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:113)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+		at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+		at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+		at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:99)
+		at reactor.core.publisher.Mono.block(Mono.java:1742)
+		at com.reddot.utilityservice.external_comunication.core.apiclient.CoreApiClient.callPost(CoreApiClient.java:42)
+		at com.reddot.utilityservice.external_comunication.core.gateway.CoreGateWay.perFormTransaction(CoreGateWay.java:31)
+		at com.reddot.utilityservice.features.wasa.service.WasaService.payBill(WasaService.java:139)
+		at com.reddot.utilityservice.features.common.service.UtilityService.payBill(UtilityService.java:74)
+		at com.reddot.utilityservice.features.common.controller.SSLUtilityController.payBill(SSLUtilityController.java:41)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+		at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+		at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+		at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+		at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+		at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+		at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+		at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)
+		at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)
+		at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+		at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:696)
+		at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+		at javax.servlet.http.HttpServlet.service(HttpServlet.java:779)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at com.reddot.utilityservice.configuration.HttpLoggingFilter.doFilter(HttpLoggingFilter.java:99)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+		at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+		at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+		at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+		at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
+		at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+		at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+		at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+		at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+		at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+		at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)
+		at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+		at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+		at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:891)
+		at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1784)
+		at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+		at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+		at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+		at java.base/java.lang.Thread.run(Thread.java:829)
+2023-03-19 20:04:50,998 WARN org.springframework.web.servlet.handler.AbstractHandlerExceptionResolver [http-nio-8080-exec-5] 41347b05-bd60-456a-b8b3-119481a47510 Resolved [com.reddot.utilityservice.custom_exceptions.ApplicationException]
+2023-03-19 20:04:50,998 DEBUG com.reddot.utilityservice.configuration.HttpLoggingFilter [http-nio-8080-exec-5] 41347b05-bd60-456a-b8b3-119481a47510  [RESPONSE:{"statusCode":"4001","message":"NOT_ENOUGH_BALANCE"}] [REQUEST TIME:Sun Mar 19 20:04:50 BDT 2023] [ELAPSED TIME:318ms]
+2023-03-19 20:11:55,922 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5m45s132ms).
+2023-03-19 20:14:51,805 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m55s883ms).
+2023-03-19 21:16:50,805 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h1m59s).
+2023-03-19 21:34:38,850 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=17m48s45ms).
+2023-03-19 22:55:39,947 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h21m1s97ms).
+2023-03-19 22:56:09,786 WARN com.zaxxer.hikari.pool.HikariPool$HouseKeeper [HikariPool-1 housekeeper]  HikariPool-1 - Retrograde clock change detected (housekeeper delta=29s839ms), soft-evicting connections from pool.
+2023-03-19 22:58:21,756 INFO org.springframework.orm.jpa.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook]  Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-03-19 22:58:21,762 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown initiated...
+2023-03-19 22:58:31,816 INFO com.zaxxer.hikari.HikariDataSource [SpringApplicationShutdownHook]  HikariPool-1 - Shutdown completed.
